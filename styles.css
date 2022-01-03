@@ -1,0 +1,93 @@
+.border {
+  background-color: black;
+  border: solid white 4px;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+button {
+  display: block;
+  position: relative;
+  left: 180px;
+  top: -35px;
+}
+
+img {
+  border-radius: 20px;
+  display: block;
+  left: 10px;
+}
+
+.currentdegrees {
+  color: grey;
+  padding: 10px;
+  font-size: 100px;
+  display: block;
+  position: relative;
+  left: 0px;
+}
+
+h1 {
+  color: white;
+  padding: 5px;
+  display: block;
+  position: relative;
+  left: 10px;
+  font-size: 50px;
+}
+
+h2 {
+  color: grey;
+  padding: 5px;
+  display: block;
+  position: relative;
+  left: 10px;
+  font-size: 18px;
+}
+
+.currentweather {
+  color: grey;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  display: block;
+  position: relative;
+  left: 3px;
+  font-size: 18px;
+}
+
+.days {
+  color: grey;
+  display: block;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  left: -150px;
+}
+
+.emoji {
+  display: block;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  left: 100px;
+}
+
+.degrees {
+  color: grey;
+  display: block;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  left: -15px;
+}
+
+.days {
+  color: grey;
+  display: block;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  left: -30px;
+}
