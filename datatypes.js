@@ -21,12 +21,25 @@ h2.innerHTML = `${day}, ${hours}:${minutes}`;
 //display weather
 
 function showTemp(response) {
+  console.log(response.data);
   let temp = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector("#degrees");
-  temperatureElement.innerHTML = `${response.data.main.temp} °C`;
+  temperatureElement.innerHTML = `${temp} °C`;
 
   let city = document.querySelector("h1");
   city.innerHTML = `${response.data.name}`;
+
+  let feelstemp = document.querySelector("h3");
+  feelstemp.innerHTML = ` Feels like ${response.data.main.feels_like} °C`;
+
+  let conditions = document.querySelector("h4");
+  conditions.innerHTML = `${response.data.weather[0].description}`;
+
+  let iconElement = document.querySelector("littlelogo");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 //currentlocation

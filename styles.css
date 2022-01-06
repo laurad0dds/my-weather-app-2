@@ -1,9 +1,10 @@
 .border {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
   background-color: black;
   border: solid white 4px;
   border-radius: 20px;
-  padding: 20px;
-  margin: 20px auto;
 }
 
 button {
@@ -46,6 +47,37 @@ h2 {
   font-size: 18px;
 }
 
+.logo {
+  display: block;
+  position: relative;
+  left: 220px;
+  top: -70px;
+  padding: 0px;
+  margin: 0px;
+}
+
+h3 {
+  color: grey;
+  padding: 5px;
+  display: block;
+  position: relative;
+  left: 10px;
+  font-size: 18px;
+}
+
+h4 {
+  color: grey;
+  padding: 5px;
+  display: block;
+  position: relative;
+  left: 10px;
+  font-size: 18px;
+}
+
+h4:first-letter {
+  text-transform: capitalize;
+}
+
 .currentweather {
   color: grey;
   padding-top: 10px;
@@ -62,7 +94,7 @@ h2 {
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
-  left: -150px;
+  left: -10px;
 }
 
 .emoji {
@@ -70,7 +102,7 @@ h2 {
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
-  left: 100px;
+  left: 30px;
 }
 
 .degrees {
@@ -79,15 +111,12 @@ h2 {
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
-  left: -15px;
+  left: 0px;
 }
 
-.days {
-  color: grey;
-  display: block;
-  position: relative;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  left: -30px;
+p {
+  font-size: small;
+  font-family: monospace;
+  text-align: left;
+  padding-top: 30px;
 }
