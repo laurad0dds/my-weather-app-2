@@ -40,6 +40,8 @@ function showTemp(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+
+  celsiusTemperature = response.data.main.temp;
 }
 
 //currentlocation
@@ -63,5 +65,30 @@ function searchlocation(event) {
   }
 }
 
+function showFarenheittemp(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#degrees");
+  celsiuslink.classList.remove("active");
+  farenheitlink.classList.add("active");
+  let fTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerhtml = Math.round(fTemperature);
+}
+
+function showCelsiustemp(event) {
+  event.preventDefault();
+  celsiuslink.classList.add("active");
+  farenheitlink.classList.remove("active");
+  let temperatureElement = document.querySelector("#degrees");
+  temperatureElement = Math.round(celsiusTemperature);
+}
+
+let celsiusTemperature = null;
+
 let theform = document.querySelector("#search-form");
 theform.addEventListener("submit", searchlocation);
+
+let farenheitlink = document.querySelector("#farenheit");
+farenheitlink.addEventListener("click", showFarenheittemp);
+
+let celsiuslink = document.querySelector("#celsius");
+celsiuslink.addEventListener("click", showCelsiustemp);
