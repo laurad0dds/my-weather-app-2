@@ -67,11 +67,12 @@ function searchlocation(event) {
 
 function showFarenheittemp(event) {
   event.preventDefault();
+  let fTemperature = (celsiusTemperature * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#degrees");
+  temperatureElement.innerhtml = Math.round(fTemperature);
+
   celsiuslink.classList.remove("active");
   farenheitlink.classList.add("active");
-  let fTemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperatureElement.innerhtml = Math.round(fTemperature);
 }
 
 function showCelsiustemp(event) {
