@@ -11,13 +11,6 @@
   border-radius: 20px;
 }
 
-button {
-  display: block;
-  position: relative;
-  left: 180px;
-  top: -35px;
-}
-
 .currentdegrees {
   color: white;
   padding: 10px;

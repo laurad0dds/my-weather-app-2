@@ -24,7 +24,7 @@ function showTemp(response) {
   console.log(response.data);
   let temp = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector("#degrees");
-  temperatureElement.innerHTML = `${temp} °C`;
+  temperatureElement.innerHTML = `${temp}`;
 
   let city = document.querySelector("h1");
   city.innerHTML = `${response.data.name}`;
