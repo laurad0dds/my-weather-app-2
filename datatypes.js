@@ -68,11 +68,10 @@ function searchlocation(event) {
 function showFarenheittemp(event) {
   event.preventDefault();
   let fTemperature = (celsiusTemperature * 9) / 5 + 32;
-  let temperatureElement = document.querySelector("#degrees");
-  temperatureElement.innerhtml = Math.round(fTemperature);
-
   celsiuslink.classList.remove("active");
   farenheitlink.classList.add("active");
+  let temperatureElement = document.querySelector("#degrees");
+  temperatureElement.innerHTML = Math.round(fTemperature);
 }
 
 function showCelsiustemp(event) {
@@ -80,7 +79,7 @@ function showCelsiustemp(event) {
   celsiuslink.classList.add("active");
   farenheitlink.classList.remove("active");
   let temperatureElement = document.querySelector("#degrees");
-  temperatureElement = Math.round(celsiusTemperature);
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
 let celsiusTemperature = null;

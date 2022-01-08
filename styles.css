@@ -112,11 +112,11 @@ p {
   padding-top: 30px;
 }
 
-.currentdegrees .active {
+.active {
   color: white;
   cursor: default;
 }
 
-.currentdegrees .active:hover {
+.active:hover {
   text-decoration: none;
 }
