@@ -18,6 +18,35 @@ let minutes = now.getMinutes();
 
 h2.innerHTML = `${day}, ${hours}:${minutes}`;
 
+//display forecast
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thursday", "Friday", "Saturday", "Sunday", "Monday"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+    <div class="col-2">
+      <div class="days">${day}</div>
+      <img
+src="clouds.png"
+width="50"
+class="emoji"
+/>
+    <div class="futureDegrees">13°C</div>
+       
+    </div>
+`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+
+  forecastElement.innerHTML = forecastHTML;
+}
+
 //display weather
 
 function showTemp(response) {
@@ -92,3 +121,5 @@ farenheitlink.addEventListener("click", showFarenheittemp);
 
 let celsiuslink = document.querySelector("#celsius");
 celsiuslink.addEventListener("click", showCelsiustemp);
+
+displayForecast();

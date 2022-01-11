@@ -79,6 +79,14 @@ h4:first-letter {
   font-size: 18px;
 }
 
+.futureForecast {
+  display: block;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  left: 30px;
+}
+
 .days {
   color: white;
   display: block;
@@ -91,18 +99,15 @@ h4:first-letter {
 .emoji {
   display: block;
   position: relative;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  left: 30px;
 }
 
-.degrees {
+.futureDegrees {
   color: white;
   display: block;
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
-  left: 0px;
+  left: -10px;
 }
 
 p {
