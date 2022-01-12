@@ -26,7 +26,7 @@ h1 {
   display: block;
   position: relative;
   left: 10px;
-  font-size: 50px;
+  font-size: 75px;
 }
 
 h2 {
@@ -41,8 +41,8 @@ h2 {
 .logo {
   display: block;
   position: relative;
-  left: 300px;
-  top: -110px;
+  left: 400px;
+  top: -120px;
   padding: 0px;
   margin: 0px;
 }
@@ -99,6 +99,7 @@ h4:first-letter {
 .emoji {
   display: block;
   position: relative;
+  left: -15px;
 }
 
 .futureDegrees {
@@ -107,11 +108,12 @@ h4:first-letter {
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
-  left: -10px;
+  left: 0px;
 }
 
 p {
-  font-size: small;
+  font-size: medium;
+  color: aliceblue;
   font-family: monospace;
   text-align: left;
   padding-top: 30px;
